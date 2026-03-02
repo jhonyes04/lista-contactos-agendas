@@ -36,10 +36,20 @@ export const AddContact = () => {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        setInputs({
-            ...inputs,
-            [name]: value,
-        });
+
+        if (name === 'phone') {
+            const soloNumeros = value.replace(/[^0-9]/g, '');
+
+            setInputs({
+                ...inputs,
+                [name]: soloNumeros,
+            });
+        } else {
+            setInputs({
+                ...inputs,
+                [name]: value,
+            });
+        }
     };
 
     const handleSubmit = async (e) => {

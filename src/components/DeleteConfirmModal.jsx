@@ -2,7 +2,8 @@ export const DeleteConfirmModal = ({
     abierto,
     confirmar,
     cancelar,
-    nombreContacto,
+    type = 'contact',
+    nombre,
 }) => {
     if (!abierto) return;
 
@@ -25,10 +26,17 @@ export const DeleteConfirmModal = ({
                     <div className="modal-body text-center">
                         <i className="fa-solid fa-triangle-exclamation fa-5x text-warning mb-4"></i>
                         <div className="text-center">
-                            <p>
-                                ¿Seguro que desea eliminar a{' '}
-                                <strong>{nombreContacto}</strong>?
-                            </p>
+                            {type === 'contact' ? (
+                                <p>
+                                    ¿Seguro que desea eliminar el contacto{' '}
+                                    <strong>{nombre}</strong>?
+                                </p>
+                            ) : (
+                                <p>
+                                    ¿Seguro que desea eliminar la agenda{' '}
+                                    <strong>{nombre}</strong>?
+                                </p>
+                            )}
                             <p className="text-danger fw-bold fs-5">
                                 ¡¡¡Esta acción no se podrá deshacer!!!
                             </p>

@@ -86,7 +86,8 @@ export const ContactCard = ({ contact }) => {
 
             <DeleteConfirmModal
                 abierto={mostrarModal}
-                nombreContacto={contact.name}
+                type="contact"
+                nombre={contact.name}
                 confirmar={() => handleClickDelete(contact)}
                 cancelar={() => setMostrarModal(false)}
             />

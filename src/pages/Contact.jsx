@@ -5,10 +5,13 @@ import { ContactCard } from '../components/ContactCard';
 import { toast } from 'react-toastify';
 
 import * as api from '../api/api';
+import { DeleteConfirmModal } from '../components/DeleteConfirmModal';
 
 export const Contact = () => {
     const { store, dispatch } = useGlobalReducer();
     const [agendas, setAgendas] = useState([]);
+    const [mostrarModal, setMostrarModal] = useState(false);
+    const [girar, setGirar] = useState(false);
 
     useEffect(() => {
         const comprobarAgenda = async (nombreAgenda) => {
@@ -18,6 +21,8 @@ export const Contact = () => {
                 const existe = await api.existeAgenda(nombreAgenda);
 
                 if (!existe) await api.postAgenda(nombreAgenda);
+
+                await handleClickRefeshAgendas();
 
                 await api.getContacts(dispatch, nombreAgenda);
             } catch (error) {
@@ -36,13 +41,17 @@ export const Contact = () => {
     };
 
     const handleClickRefeshAgendas = async () => {
+        setGirar(true);
         setAgendas(await api.getAgendas());
+
+        setTimeout(() => setGirar(false), 1000);
     };
 
     const handleClickEliminarAgenda = async (nombreAgenda) => {
         const agendaEliminada = await api.deleteAgenda(nombreAgenda);
 
         if (agendaEliminada) {
+            setMostrarModal(false);
             if (agendas.length > 0) {
                 dispatch({
                     type: 'SET_AGENDA',
@@ -68,34 +77,44 @@ export const Contact = () => {
         <div className="container my-5" style={{ minWidth: '400px' }}>
             <div className="row">
                 <div className="col-12 d-flex align-items-center mb-2 gap-1">
-                    <select
-                        name="agenda"
-                        id="agenda"
-                        value={store.agendaActiva}
-                        onChange={cambiarAgenda}
-                        className="form-select"
-                    >
-                        {agendas.map((agenda) => (
-                            <option value={agenda} key={agenda}>
-                                {agenda}
-                            </option>
-                        ))}
-                    </select>
+                    <div className="form-floating w-100">
+                        <select
+                            name="agenda"
+                            id="agenda"
+                            value={store.agendaActiva}
+                            onChange={cambiarAgenda}
+                            className="form-select"
+                        >
+                            {agendas.length > 0 ? (
+                                agendas.map((agenda) => (
+                                    <option value={agenda} key={agenda}>
+                                        {agenda}
+                                    </option>
+                                ))
+                            ) : (
+                                <option value="" disabled>
+                                    No hay agendas creadas
+                                </option>
+                            )}
+                        </select>
+                        <label htmlFor="agenda">Selecciona una agenda</label>
+                    </div>
                     <button
                         onClick={handleClickRefeshAgendas}
                         className="btn btn-success"
                         title="Actualizar lista de agendas"
                     >
-                        <i className="fa-solid fa-refresh"></i>
+                        <i
+                            className={`fa-solid fa-refresh fa-2x ${girar ? 'refrescar' : ''}`}
+                        ></i>
                     </button>
                     <button
-                        onClick={() =>
-                            handleClickEliminarAgenda(store.agendaActiva)
-                        }
+                        type="button"
+                        onClick={() => setMostrarModal(true)}
                         className="btn btn-danger"
                         title="Eliminar agenda seleccionada"
                     >
-                        <i className="fa-solid fa-trash-can"></i>
+                        <i className="fa-solid fa-trash-can fa-2x"></i>
                     </button>
                 </div>
             </div>
@@ -105,7 +124,7 @@ export const Contact = () => {
                         <div className="col-12 col-md-8 d-flex justify-content-center justify-content-md-start align-items-center gap-2">
                             <h1>
                                 {store.contacts.length > 0
-                                    ? 'Contactos en agenda'
+                                    ? `Contactos ${store.agendaActiva}`
                                     : 'Lista de contactos vacía'}
                             </h1>
                             {store.contacts.length > 0 && (
@@ -148,6 +167,13 @@ export const Contact = () => {
                     )}
                 </div>
             </div>
+            <DeleteConfirmModal
+                abierto={mostrarModal}
+                type="agenda"
+                nombre={store.agendaActiva}
+                confirmar={() => handleClickEliminarAgenda(store.agendaActiva)}
+                cancelar={() => setMostrarModal(false)}
+            />
         </div>
     );
 };
