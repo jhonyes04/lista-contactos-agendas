@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import useGlobalReducer from '../hooks/useGlobalReducer';
 import { ContactCard } from '../components/ContactCard';
+import { toast } from 'react-toastify';
 
 import * as api from '../api/api';
 
@@ -34,16 +35,45 @@ export const Contact = () => {
         });
     };
 
+    const handleClickRefeshAgendas = async () => {
+        setAgendas(await api.getAgendas());
+    };
+
+    const handleClickEliminarAgenda = async (nombreAgenda) => {
+        const agendaEliminada = await api.deleteAgenda(nombreAgenda);
+
+        if (agendaEliminada) {
+            if (agendas.length > 0) {
+                dispatch({
+                    type: 'SET_AGENDA',
+                    payload: agendas[0],
+                });
+                handleClickRefeshAgendas();
+            }
+            toast.success(
+                <span>
+                    Agenda <strong>{nombreAgenda}</strong> eliminiada
+                    correctamente
+                </span>,
+                {
+                    position: 'top-center',
+                    autoClose: 2000,
+                    closeOnClick: false,
+                },
+            );
+        }
+    };
+
     return (
         <div className="container my-5" style={{ minWidth: '400px' }}>
             <div className="row">
-                <div className="col-12">
+                <div className="col-12 d-flex align-items-center mb-2 gap-1">
                     <select
                         name="agenda"
                         id="agenda"
                         value={store.agendaActiva}
                         onChange={cambiarAgenda}
-                        className="form-select mb-2"
+                        className="form-select"
                     >
                         {agendas.map((agenda) => (
                             <option value={agenda} key={agenda}>
@@ -51,6 +81,22 @@ export const Contact = () => {
                             </option>
                         ))}
                     </select>
+                    <button
+                        onClick={handleClickRefeshAgendas}
+                        className="btn btn-success"
+                        title="Actualizar lista de agendas"
+                    >
+                        <i className="fa-solid fa-refresh"></i>
+                    </button>
+                    <button
+                        onClick={() =>
+                            handleClickEliminarAgenda(store.agendaActiva)
+                        }
+                        className="btn btn-danger"
+                        title="Eliminar agenda seleccionada"
+                    >
+                        <i className="fa-solid fa-trash-can"></i>
+                    </button>
                 </div>
             </div>
             <div className="card">

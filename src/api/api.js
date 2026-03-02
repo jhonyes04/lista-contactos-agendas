@@ -16,6 +16,21 @@ export const getAgendas = async () => {
     }
 };
 
+export const deleteAgenda = async (nombreAgenda) => {
+    try {
+        const response = await fetch(API_AGENDA + '/' + nombreAgenda, {
+            method: 'DELETE',
+        });
+
+        if (!response.ok) throw new Error('Error al eliminar agenda');
+
+        return true;
+    } catch (error) {
+        console.error('Error al eliminar agenda:', error);
+        return false;
+    }
+};
+
 export const postAgenda = async () => {
     try {
         const response = await fetch(API_AGENDA + '/' + AGENDA, {
