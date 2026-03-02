@@ -1,0 +1,1329 @@
+{
+    "config": {
+        "port": 3000,
+        "os": "win32",
+        "editor": {
+            "mode": "extension",
+            "agent": "vscode",
+            "version": "5.0.363"
+        },
+        "dirPath": "./.learn",
+        "configPath": "learn.json",
+        "outputPath": ".learn/dist",
+        "publicPath": "/preview",
+        "publicUrl": "http://localhost:3000",
+        "contact": "https://github.com/learnpack/learnpack/issues/new",
+        "language": "auto",
+        "autoPlay": true,
+        "projectType": "template",
+        "grading": "isolated",
+        "exercisesPath": "./",
+        "webpackTemplate": null,
+        "disableGrading": false,
+        "disabledActions": [],
+        "actions": [],
+        "entries": {
+            "html": "index.html",
+            "vanillajs": "index.js",
+            "react": "app.jsx",
+            "node": "app.js",
+            "python3": "app.py",
+            "java": "app.java"
+        },
+        "suggestions": {
+            "agent": null
+        },
+        "warnings": {},
+        "title": {
+            "en": "React.js Starter Template for web applications",
+            "es": "Plantilla Inicial para crear applicaciones semi-senior con React"
+        },
+        "description": {
+            "en": "This is a starter template for legit React.js projects. It includes a basic folder structure, a sample component, styles and other usual configurations to quicly kickstart your project.",
+            "es": "Este es una plantilla inicial para proyectos de React.js. Incluye una estructura básica de carpetas, un componente de ejemplo, estilos y otras configuraciones habituales para iniciar rápidamente tu proyecto."
+        },
+        "repository": "https://github.com/4geeksacademy/react-hello-webapp",
+        "preview": "",
+        "difficulty": "beginner",
+        "technologies": [
+            "React.js",
+            "Javascript",
+            "Vite"
+        ],
+        "translations": []
+    },
+    "address": "http://localhost:3000",
+    "currentExercise": null,
+    "exercises": [
+        {
+            "position": 0,
+            "path": "node_modules",
+            "slug": "node_modules",
+            "translations": {},
+            "language": "node",
+            "entry": null,
+            "title": "node_modules",
+            "graded": false,
+            "files": [
+                {
+                    "path": "node_modules/.bin",
+                    "name": ".bin",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/.package-lock.json",
+                    "name": ".package-lock.json",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/.vite",
+                    "name": ".vite",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/@aashutoshrathi",
+                    "name": "@aashutoshrathi",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/@ampproject",
+                    "name": "@ampproject",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/@babel",
+                    "name": "@babel",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/@esbuild",
+                    "name": "@esbuild",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/@eslint",
+                    "name": "@eslint",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/@eslint-community",
+                    "name": "@eslint-community",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/@humanwhocodes",
+                    "name": "@humanwhocodes",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/@jridgewell",
+                    "name": "@jridgewell",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/@nodelib",
+                    "name": "@nodelib",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/@remix-run",
+                    "name": "@remix-run",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/@types",
+                    "name": "@types",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/@ungap",
+                    "name": "@ungap",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/@vitejs",
+                    "name": "@vitejs",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/acorn",
+                    "name": "acorn",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/acorn-jsx",
+                    "name": "acorn-jsx",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/ajv",
+                    "name": "ajv",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/ansi-regex",
+                    "name": "ansi-regex",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/ansi-styles",
+                    "name": "ansi-styles",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/anymatch",
+                    "name": "anymatch",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/argparse",
+                    "name": "argparse",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/array-buffer-byte-length",
+                    "name": "array-buffer-byte-length",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/array-includes",
+                    "name": "array-includes",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/array.prototype.flat",
+                    "name": "array.prototype.flat",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/array.prototype.flatmap",
+                    "name": "array.prototype.flatmap",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/array.prototype.tosorted",
+                    "name": "array.prototype.tosorted",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/arraybuffer.prototype.slice",
+                    "name": "arraybuffer.prototype.slice",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/asynciterator.prototype",
+                    "name": "asynciterator.prototype",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/available-typed-arrays",
+                    "name": "available-typed-arrays",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/balanced-match",
+                    "name": "balanced-match",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/binary-extensions",
+                    "name": "binary-extensions",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/brace-expansion",
+                    "name": "brace-expansion",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/braces",
+                    "name": "braces",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/browserslist",
+                    "name": "browserslist",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/call-bind",
+                    "name": "call-bind",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/callsites",
+                    "name": "callsites",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/caniuse-lite",
+                    "name": "caniuse-lite",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/chalk",
+                    "name": "chalk",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/chokidar",
+                    "name": "chokidar",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/clsx",
+                    "name": "clsx",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/color-convert",
+                    "name": "color-convert",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/color-name",
+                    "name": "color-name",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/concat-map",
+                    "name": "concat-map",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/convert-source-map",
+                    "name": "convert-source-map",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/cross-spawn",
+                    "name": "cross-spawn",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/csstype",
+                    "name": "csstype",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/debug",
+                    "name": "debug",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/deep-is",
+                    "name": "deep-is",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/define-data-property",
+                    "name": "define-data-property",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/define-properties",
+                    "name": "define-properties",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/doctrine",
+                    "name": "doctrine",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/electron-to-chromium",
+                    "name": "electron-to-chromium",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/es-abstract",
+                    "name": "es-abstract",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/es-iterator-helpers",
+                    "name": "es-iterator-helpers",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/es-set-tostringtag",
+                    "name": "es-set-tostringtag",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/es-shim-unscopables",
+                    "name": "es-shim-unscopables",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/es-to-primitive",
+                    "name": "es-to-primitive",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/esbuild",
+                    "name": "esbuild",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/escalade",
+                    "name": "escalade",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/escape-string-regexp",
+                    "name": "escape-string-regexp",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/eslint",
+                    "name": "eslint",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/eslint-plugin-react",
+                    "name": "eslint-plugin-react",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/eslint-plugin-react-hooks",
+                    "name": "eslint-plugin-react-hooks",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/eslint-plugin-react-refresh",
+                    "name": "eslint-plugin-react-refresh",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/eslint-scope",
+                    "name": "eslint-scope",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/eslint-visitor-keys",
+                    "name": "eslint-visitor-keys",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/espree",
+                    "name": "espree",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/esquery",
+                    "name": "esquery",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/esrecurse",
+                    "name": "esrecurse",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/estraverse",
+                    "name": "estraverse",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/esutils",
+                    "name": "esutils",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/fast-deep-equal",
+                    "name": "fast-deep-equal",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/fast-json-stable-stringify",
+                    "name": "fast-json-stable-stringify",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/fast-levenshtein",
+                    "name": "fast-levenshtein",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/fastq",
+                    "name": "fastq",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/file-entry-cache",
+                    "name": "file-entry-cache",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/fill-range",
+                    "name": "fill-range",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/find-up",
+                    "name": "find-up",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/flat-cache",
+                    "name": "flat-cache",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/flatted",
+                    "name": "flatted",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/for-each",
+                    "name": "for-each",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/fs.realpath",
+                    "name": "fs.realpath",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/function-bind",
+                    "name": "function-bind",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/function.prototype.name",
+                    "name": "function.prototype.name",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/functions-have-names",
+                    "name": "functions-have-names",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/gensync",
+                    "name": "gensync",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/get-intrinsic",
+                    "name": "get-intrinsic",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/get-symbol-description",
+                    "name": "get-symbol-description",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/glob",
+                    "name": "glob",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/glob-parent",
+                    "name": "glob-parent",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/globals",
+                    "name": "globals",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/globalthis",
+                    "name": "globalthis",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/gopd",
+                    "name": "gopd",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/graphemer",
+                    "name": "graphemer",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/has-bigints",
+                    "name": "has-bigints",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/has-flag",
+                    "name": "has-flag",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/has-property-descriptors",
+                    "name": "has-property-descriptors",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/has-proto",
+                    "name": "has-proto",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/has-symbols",
+                    "name": "has-symbols",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/has-tostringtag",
+                    "name": "has-tostringtag",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/hasown",
+                    "name": "hasown",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/ignore",
+                    "name": "ignore",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/immutable",
+                    "name": "immutable",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/import-fresh",
+                    "name": "import-fresh",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/imurmurhash",
+                    "name": "imurmurhash",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/inflight",
+                    "name": "inflight",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/inherits",
+                    "name": "inherits",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/internal-slot",
+                    "name": "internal-slot",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-array-buffer",
+                    "name": "is-array-buffer",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-async-function",
+                    "name": "is-async-function",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-bigint",
+                    "name": "is-bigint",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-binary-path",
+                    "name": "is-binary-path",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-boolean-object",
+                    "name": "is-boolean-object",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-callable",
+                    "name": "is-callable",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-core-module",
+                    "name": "is-core-module",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-date-object",
+                    "name": "is-date-object",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-extglob",
+                    "name": "is-extglob",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-finalizationregistry",
+                    "name": "is-finalizationregistry",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-generator-function",
+                    "name": "is-generator-function",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-glob",
+                    "name": "is-glob",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-map",
+                    "name": "is-map",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-negative-zero",
+                    "name": "is-negative-zero",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-number",
+                    "name": "is-number",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-number-object",
+                    "name": "is-number-object",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-path-inside",
+                    "name": "is-path-inside",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-regex",
+                    "name": "is-regex",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-set",
+                    "name": "is-set",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-shared-array-buffer",
+                    "name": "is-shared-array-buffer",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-string",
+                    "name": "is-string",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-symbol",
+                    "name": "is-symbol",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-typed-array",
+                    "name": "is-typed-array",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-weakmap",
+                    "name": "is-weakmap",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-weakref",
+                    "name": "is-weakref",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/is-weakset",
+                    "name": "is-weakset",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/isarray",
+                    "name": "isarray",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/isexe",
+                    "name": "isexe",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/iterator.prototype",
+                    "name": "iterator.prototype",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/js-tokens",
+                    "name": "js-tokens",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/js-yaml",
+                    "name": "js-yaml",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/jsesc",
+                    "name": "jsesc",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/json-buffer",
+                    "name": "json-buffer",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/json-schema-traverse",
+                    "name": "json-schema-traverse",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/json-stable-stringify-without-jsonify",
+                    "name": "json-stable-stringify-without-jsonify",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/json5",
+                    "name": "json5",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/jsx-ast-utils",
+                    "name": "jsx-ast-utils",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/keyv",
+                    "name": "keyv",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/levn",
+                    "name": "levn",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/locate-path",
+                    "name": "locate-path",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/lodash.merge",
+                    "name": "lodash.merge",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/loose-envify",
+                    "name": "loose-envify",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/lru-cache",
+                    "name": "lru-cache",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/minimatch",
+                    "name": "minimatch",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/ms",
+                    "name": "ms",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/nanoid",
+                    "name": "nanoid",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/natural-compare",
+                    "name": "natural-compare",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/node-releases",
+                    "name": "node-releases",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/normalize-path",
+                    "name": "normalize-path",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/object-assign",
+                    "name": "object-assign",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/object-inspect",
+                    "name": "object-inspect",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/object-keys",
+                    "name": "object-keys",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/object.assign",
+                    "name": "object.assign",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/object.entries",
+                    "name": "object.entries",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/object.fromentries",
+                    "name": "object.fromentries",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/object.hasown",
+                    "name": "object.hasown",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/object.values",
+                    "name": "object.values",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/once",
+                    "name": "once",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/optionator",
+                    "name": "optionator",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/p-limit",
+                    "name": "p-limit",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/p-locate",
+                    "name": "p-locate",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/parent-module",
+                    "name": "parent-module",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/path-exists",
+                    "name": "path-exists",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/path-is-absolute",
+                    "name": "path-is-absolute",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/path-key",
+                    "name": "path-key",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/path-parse",
+                    "name": "path-parse",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/picocolors",
+                    "name": "picocolors",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/picomatch",
+                    "name": "picomatch",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/postcss",
+                    "name": "postcss",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/prelude-ls",
+                    "name": "prelude-ls",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/prop-types",
+                    "name": "prop-types",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/punycode",
+                    "name": "punycode",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/queue-microtask",
+                    "name": "queue-microtask",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/react",
+                    "name": "react",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/react-dom",
+                    "name": "react-dom",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/react-is",
+                    "name": "react-is",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/react-refresh",
+                    "name": "react-refresh",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/react-router",
+                    "name": "react-router",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/react-router-dom",
+                    "name": "react-router-dom",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/react-toastify",
+                    "name": "react-toastify",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/readdirp",
+                    "name": "readdirp",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/reflect.getprototypeof",
+                    "name": "reflect.getprototypeof",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/regexp.prototype.flags",
+                    "name": "regexp.prototype.flags",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/resolve",
+                    "name": "resolve",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/resolve-from",
+                    "name": "resolve-from",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/reusify",
+                    "name": "reusify",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/rimraf",
+                    "name": "rimraf",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/rollup",
+                    "name": "rollup",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/run-parallel",
+                    "name": "run-parallel",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/safe-array-concat",
+                    "name": "safe-array-concat",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/safe-regex-test",
+                    "name": "safe-regex-test",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/sass",
+                    "name": "sass",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/scheduler",
+                    "name": "scheduler",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/semver",
+                    "name": "semver",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/set-function-length",
+                    "name": "set-function-length",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/set-function-name",
+                    "name": "set-function-name",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/shebang-command",
+                    "name": "shebang-command",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/shebang-regex",
+                    "name": "shebang-regex",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/side-channel",
+                    "name": "side-channel",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/source-map-js",
+                    "name": "source-map-js",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/string.prototype.matchall",
+                    "name": "string.prototype.matchall",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/string.prototype.trim",
+                    "name": "string.prototype.trim",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/string.prototype.trimend",
+                    "name": "string.prototype.trimend",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/string.prototype.trimstart",
+                    "name": "string.prototype.trimstart",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/strip-ansi",
+                    "name": "strip-ansi",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/strip-json-comments",
+                    "name": "strip-json-comments",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/supports-color",
+                    "name": "supports-color",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/supports-preserve-symlinks-flag",
+                    "name": "supports-preserve-symlinks-flag",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/text-table",
+                    "name": "text-table",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/to-fast-properties",
+                    "name": "to-fast-properties",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/to-regex-range",
+                    "name": "to-regex-range",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/type-check",
+                    "name": "type-check",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/type-fest",
+                    "name": "type-fest",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/typed-array-buffer",
+                    "name": "typed-array-buffer",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/typed-array-byte-length",
+                    "name": "typed-array-byte-length",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/typed-array-byte-offset",
+                    "name": "typed-array-byte-offset",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/typed-array-length",
+                    "name": "typed-array-length",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/unbox-primitive",
+                    "name": "unbox-primitive",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/update-browserslist-db",
+                    "name": "update-browserslist-db",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/uri-js",
+                    "name": "uri-js",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/vite",
+                    "name": "vite",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/which",
+                    "name": "which",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/which-boxed-primitive",
+                    "name": "which-boxed-primitive",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/which-builtin-type",
+                    "name": "which-builtin-type",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/which-collection",
+                    "name": "which-collection",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/which-typed-array",
+                    "name": "which-typed-array",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/wrappy",
+                    "name": "wrappy",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/yallist",
+                    "name": "yallist",
+                    "hidden": true
+                },
+                {
+                    "path": "node_modules/yocto-queue",
+                    "name": "yocto-queue",
+                    "hidden": true
+                }
+            ],
+            "done": false
+        },
+        {
+            "position": 1,
+            "path": "src",
+            "slug": "src",
+            "translations": {},
+            "language": "react",
+            "entry": null,
+            "title": "src",
+            "graded": false,
+            "files": [
+                {
+                    "path": "src/api",
+                    "name": "api",
+                    "hidden": true
+                },
+                {
+                    "path": "src/assets",
+                    "name": "assets",
+                    "hidden": true
+                },
+                {
+                    "path": "src/components",
+                    "name": "components",
+                    "hidden": true
+                },
+                {
+                    "path": "src/hooks",
+                    "name": "hooks",
+                    "hidden": true
+                },
+                {
+                    "path": "src/index.css",
+                    "name": "index.css",
+                    "hidden": false
+                },
+                {
+                    "path": "src/main.jsx",
+                    "name": "main.jsx",
+                    "hidden": false
+                },
+                {
+                    "path": "src/pages",
+                    "name": "pages",
+                    "hidden": true
+                },
+                {
+                    "path": "src/routes.jsx",
+                    "name": "routes.jsx",
+                    "hidden": false
+                },
+                {
+                    "path": "src/store.js",
+                    "name": "store.js",
+                    "hidden": false
+                }
+            ],
+            "done": false
+        }
+    ],
+    "bugsLink": null,
+    "videoSolutions": false,
+    "localhostOnly": false,
+    "session": 6180628089815714000
+}
